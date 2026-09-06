@@ -6,8 +6,11 @@ Pruebas unitarias para todas las funciones del modulo de resta.
 
 import unittest
 
-# from modulos.eq02_resta.enteros.resta_enteros import resta_enteros
-# from modulos.eq02_resta.decimales.resta_decimales import resta_decimales
+# Usar SIEMPRE importaciones relativas (con punto), nunca absolutas con
+# "modulos.eq02_resta..." -- las relativas siguen funcionando aunque esta
+# carpeta se mueva de lugar (por ejemplo al migrar al repo oficial del curso).
+# from ..enteros.resta_enteros import resta_enteros
+# from ..decimales.resta_decimales import resta_decimales
 # ... importar el resto conforme se vayan implementando
 
 class TestResta(unittest.TestCase):
