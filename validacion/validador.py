@@ -7,6 +7,10 @@ def validar_entero(valor) -> bool:
     """Valida que el valor sea especificamente un entero (para resta_enteros)."""
     return isinstance(valor, int) and not isinstance(valor, bool)
 
+def validar_numero(valor) -> bool:
+    """Valida que el valor sea numerico (int o float), excluyendo booleanos."""
+    return isinstance(valor, (int, float)) and not isinstance(valor, bool)
+
 def validar_decimal(valor) -> bool:
     """Valida que el valor sea especificamente un decimal/float (para resta_decimales)."""
     return isinstance(valor, float)

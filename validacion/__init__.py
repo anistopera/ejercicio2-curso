@@ -1,4 +1,4 @@
-from .validar import (
+from .validador import (
     validar_numero,
     validar_entero,
     validar_decimal,
