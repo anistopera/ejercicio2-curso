@@ -1,9 +1,8 @@
 """
 Equipo: Bug Hunters (eq02) | HU: HU-201
-Encargado: [Persona A]
+Encargado: [Ronald Escobar Vargas]
 """
 
 def resta_enteros(a: int, b: int) -> int:
     """Resta dos numeros enteros."""
-    # TODO: implementar
-    pass
+    return a - b
