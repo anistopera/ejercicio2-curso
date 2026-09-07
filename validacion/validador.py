@@ -2,14 +2,18 @@
 Equipo: Bug Hunters (eq02) | HU: HU-201
 Encargado: [Persona G]
 """
+import math
 
 def validar_entero(valor) -> bool:
     """Valida que el valor sea especificamente un entero (para resta_enteros)."""
     return isinstance(valor, int) and not isinstance(valor, bool)
 
 def validar_numero(valor) -> bool:
-    """Valida que el valor sea numerico (int o float), excluyendo booleanos."""
+    """Valida que el valor sea un numero real concreto (int o float finito, no bool, no nan, no inf)."""
     return isinstance(valor, (int, float)) and not isinstance(valor, bool)
+    if isinstance(valor, bool) or not isinstance(valor, (int, float)):
+        return False
+    return math.isfinite(valor)
 
 def validar_decimal(valor) -> bool:
     """Valida que el valor sea especificamente un decimal/float (para resta_decimales)."""
