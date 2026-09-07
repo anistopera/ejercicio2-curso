@@ -1,6 +1,6 @@
 """
 Equipo: Bug Hunters (eq02) | HU: HU-201
-Encargado: [Persona G]
+Encargados: [Rodrigo Mamani Rocha, Santiago Piscoya Bellido]
 """
 import math
 
