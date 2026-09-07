@@ -1,6 +1,6 @@
 """
 Equipo: Bug Hunters (eq02) | HU: HU-201
-Encargado: [Persona F]
+Encargado: [Darlin Rosse Almanza Yana ]
 """
 
 def resta_matrices(m1: list, m2: list) -> list:
