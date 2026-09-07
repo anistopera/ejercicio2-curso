@@ -10,14 +10,13 @@ def validar_entero(valor) -> bool:
 
 def validar_numero(valor) -> bool:
     """Valida que el valor sea un numero real concreto (int o float finito, no bool, no nan, no inf)."""
-    return isinstance(valor, (int, float)) and not isinstance(valor, bool)
     if isinstance(valor, bool) or not isinstance(valor, (int, float)):
         return False
     return math.isfinite(valor)
 
 def validar_decimal(valor) -> bool:
-    """Valida que el valor sea especificamente un decimal/float (para resta_decimales)."""
-    return isinstance(valor, float)
+    """Valida que el valor sea especificamente un decimal/float real y finito (no nan, no inf)."""
+    return isinstance(valor, float) and math.isfinite(valor)
 
 def validar_negativo(valor) -> bool:
     """Valida que el valor sea un numero negativo (para resta_negativos)."""
