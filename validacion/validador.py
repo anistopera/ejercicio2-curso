@@ -23,8 +23,8 @@ def validar_negativo(valor) -> bool:
     return validar_numero(valor) and valor < 0
 
 def validar_lista_numerica(lista) -> bool:
-    """Valida que todos los elementos de una lista sean numericos."""
-    if not isinstance(lista, list):
+    """Valida que sea una lista no vacia y que todos sus elementos sean numericos reales y finitos."""
+    if not isinstance(lista, list) or len(lista) == 0:
         return False
     return all(validar_numero(elemento) for elemento in lista)
 
