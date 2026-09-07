@@ -35,12 +35,14 @@ def validar_listas_misma_longitud(lista1, lista2) -> bool:
     return len(lista1) == len(lista2)
 
 def validar_matriz(matriz) -> bool:
-    """Valida que sea una matriz bien formada: lista de listas numericas, todas del mismo largo."""
+    """Valida que sea una matriz bien formada: lista no vacia de listas numericas no vacias, todas de igual dimension."""
     if not isinstance(matriz, list) or len(matriz) == 0:
         return False
     if not all(validar_lista_numerica(fila) for fila in matriz):
         return False
     largo_fila = len(matriz[0])
+    if largo_fila == 0:
+        return False
     return all(len(fila) == largo_fila for fila in matriz)
 
 def validar_matrices_misma_dimension(m1, m2) -> bool:
