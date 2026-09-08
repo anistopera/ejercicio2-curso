@@ -6,9 +6,7 @@ Usado por: operaciones_mediana.py, operaciones_promedio.py, operaciones_moda.py
 
 from typing import List, Union
 
-# Nota: Se añade 'complex' si el equipo de Promedio Simple lo requiere, 
-# pero usualmente promedios y medianas trabajan con int y float.
-Numero = Union[int, float, complex]
+Numero = Union[int, float]
 
 def es_lista_de_numeros(valores) -> bool:
     """
@@ -17,7 +15,7 @@ def es_lista_de_numeros(valores) -> bool:
     if not isinstance(valores, list) or len(valores) == 0:
         return False
     # Se unifica la lógica de ambos equipos
-    return all(isinstance(x, (int, float, complex)) and not isinstance(x, bool) for x in valores)
+    return all(isinstance(x, (int, float)) and not isinstance(x, bool) for x in valores)
 
 def es_matriz_de_numeros(valores) -> bool:
     """
