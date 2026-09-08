@@ -64,3 +64,4 @@ def validar_matrices_mismas_dimensiones(matrices):
         if len(m) != filas or any(len(f) != columnas for f in m):
             return False
     return True
+    
