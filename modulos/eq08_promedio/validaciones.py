@@ -5,6 +5,7 @@ Usado por: operaciones_mediana.py, operaciones_promedio.py, operaciones_moda.py
 """
 
 from typing import List, Union
+import math
 
 Numero = Union[int, float]
 
@@ -19,6 +20,7 @@ def es_lista_de_numeros(valores) -> bool:
         return False
     if len(valores) == 0:
         return False
+    # Permitir todos los números incluyendo inf, -inf y NaN
     return all(isinstance(x, (int, float)) and not isinstance(x, bool) for x in valores)
 
 
