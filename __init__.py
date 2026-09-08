@@ -22,9 +22,9 @@ el repo oficial del curso).
 
 from .enteros.resta_enteros import resta_enteros
 from .decimales.resta_decimales import resta_decimales
-# from .negativos.resta_negativos import resta_negativos
-# from .lista.resta_lista import resta_lista
-# from .entre_listas.resta_entre_listas import resta_entre_listas
+from .negativos.resta_negativos import resta_negativos
+from .lista.resta_lista import resta_lista
+from .entre_listas.resta_entre_listas import resta_entre_listas
 from .matrices.resta_matrices import resta_matrices
 from .validacion.validador import validar_numero, validar_lista_numerica
 from .menu.menu_resta import mostrar_menu
