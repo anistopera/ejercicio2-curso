@@ -8,7 +8,7 @@ de números.
 """
 
 from typing import List, Union
-from .validaciones import validar_entrada_numerica
+from validaciones import validar_entrada_numerica
 import math
 
 Numero = Union[int, float]
