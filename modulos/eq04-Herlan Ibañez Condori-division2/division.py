@@ -1,4 +1,4 @@
-#Herlan Ibañez Condori
+#Responsable: Herlan Ibañez Condori
 class Division:
     @staticmethod
     def division(x, y):
